@@ -1,5 +1,5 @@
 document.getElementById('rsvp-form').addEventListener('submit', function(event) {
-    event.preventDefault();
+    // event.preventDefault();  // Allow form submission to Formspree
 
     // Get form values
     const name = document.getElementById('name').value;
@@ -17,6 +17,5 @@ document.getElementById('rsvp-form').addEventListener('submit', function(event) 
         confirmationMessage.style.color = '#dc3545';
     }
 
-    // Optionally, clear the form
-    document.getElementById('rsvp-form').reset();
+    // The form will now submit to Formspree automatically
 });
