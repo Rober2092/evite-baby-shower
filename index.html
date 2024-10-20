@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Valentine Baby Shower Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hero">
+        <div class="content">
+            <h1>Our Little Valentine is On The Way</h1>
+            <h2>A Baby Shower for Maci & Hugo</h2>
+            <p>Saturday, November 23, 2024 | 12:00 PM - 4:00 PM</p>
+            <p>29632 Preston Drive, Laguna Niguel, CA 92677</p>
+            <p><strong>Hosted By:</strong> Julie Kirkham, Auti Ames & Netty Curry</p>
+            <p><strong>Questions:</strong> 562.714.9710</p>
+        </div>
+    </div>
+
+    <section class="message-from-host">
+        <h3>Message from the Host</h3>
+        <p>Please dress in Black, White, Red or Pink Casual Attire.</p>
+        <p>Kids are Welcome.</p>
+        <p>Diaper Raffle! Please get non-Chlorine Diapers.</p>
+        <p>Instead of a card, bring a kids bilingual book.</p>
+    </section>
+
+    <section class="rsvp-section">
+        <h3>RSVP Here</h3>
+        <form id="rsvp-form" action="https://formspree.io/f/xkgnggvq" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="attending">Will you attend?</label>
+                <select id="attending" name="attending" required>
+                    <option value="" disabled selected>Select</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="confirmation-message"></p>
+    </section>
+
+    <section class="registry">
+        <h3>Gift Registry</h3>
+        <p>We are registered at <a href="https://my.babylist.com/baby-macilynn-ames" target="_blank">Babylist</a>. Click the link to view our registry!</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
