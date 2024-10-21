@@ -1,5 +1,5 @@
 document.getElementById('rsvp-form').addEventListener('submit', function(event) {
-    // event.preventDefault();  // Allow form submission to Formspree
+    // Allow form submission to Formspree
 
     // Get form values
     const name = document.getElementById('name').value;

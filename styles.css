@@ -171,6 +171,26 @@ button:hover {
     color: #ff4040;
 }
 
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #ffe0e6;
+    color: #333;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #ff6b6b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .content h1 {
