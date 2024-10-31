@@ -25,10 +25,11 @@ a {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/IMG_4009.jpeg') no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/IMG_4009.jpeg') no-repeat center center;
     background-size: cover;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -197,36 +198,34 @@ footer a:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero {
-        height: 80vh; /* Adjust height for smaller screens */
-        padding: 20px;
+        height: 90vh;
+        background-size: contain; /* Ensures the entire image fits within the screen */
+        background-position: center top; /* Adjust positioning for better fit on mobile */
     }
 
     .content {
         padding: 15px;
+        max-width: 90%; /* Prevents the content from taking up the full width on small screens */
         background-color: rgba(0, 0, 0, 0.7); /* Darker overlay for better readability on mobile */
     }
 
     .content h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .content h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .content p {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
-    .message-from-host h3 {
+    .message-from-host h3, .rsvp-section h3, .registry h3 {
         font-size: 1.5rem;
     }
 
-    .rsvp-section h3 {
-        font-size: 1.5rem;
-    }
-
-    .message-from-host p, .registry p {
+    .message-from-host p, .registry p, #confirmation-message {
         font-size: 1rem;
     }
 }
